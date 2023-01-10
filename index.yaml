@@ -1,0 +1,59 @@
+apiVersion: v1
+entries:
+  cloud-city-database:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-01-10T18:35:02.358127Z"
+    description: A Helm chart for Kubernetes
+    digest: 9b251c45ed760aa693327eef2b39864a7a6b904b1416088c71ee2046d862bb30
+    name: cloud-city-database
+    type: application
+    urls:
+    - https://ebdmuir.github.io/helm-charts/cloud-city-database-0.1.0.tgz
+    version: 0.1.0
+  keycloak-gatekeeper-sidecar:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-01-10T18:35:02.358497Z"
+    description: A Helm chart for Kubernetes
+    digest: b204f568d82fa16a16f15d7b9791bc4a8f1db53e5d453de2800f6143f3bfb935
+    name: keycloak-gatekeeper-sidecar
+    type: application
+    urls:
+    - https://ebdmuir.github.io/helm-charts/keycloak-gatekeeper-sidecar-0.1.0.tgz
+    version: 0.1.0
+  odne-strapi-chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-01-10T18:35:02.358852Z"
+    description: A Helm chart for Kubernetes
+    digest: be6ab6df003beeaa50abc864477a47ea534de72e5a64891c5598680461670c48
+    name: odne-strapi-chart
+    type: application
+    urls:
+    - https://ebdmuir.github.io/helm-charts/odne-strapi-chart-0.1.0.tgz
+    version: 0.1.0
+  redis-ha:
+  - apiVersion: v1
+    appVersion: 5.0.3
+    created: "2023-01-10T18:35:02.35935Z"
+    description: Highly available Kubernetes implementation of Redis
+    digest: c750d173556fce680b2805590a88cec1f34a5596c55891402e7cafedc31c0794
+    home: http://redis.io/
+    icon: https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1200px-Redis_Logo.svg.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: salimsalaues@gmail.com
+      name: ssalaues
+    name: redis-ha
+    sources:
+    - https://redis.io/download
+    - https://github.com/scality/Zenko/tree/development/1.0/kubernetes/zenko/charts/redis-ha
+    - https://github.com/oliver006/redis_exporter
+    urls:
+    - https://ebdmuir.github.io/helm-charts/redis-ha-0.0.1.tgz
+    version: 0.0.1
+generated: "2023-01-10T18:35:02.357142Z"
