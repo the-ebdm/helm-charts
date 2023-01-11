@@ -1,0 +1,7 @@
+# Persistant storage for the database
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ .Release.Name }}-datastore
+spec:
+  volumeName: {{ .Release.Name }}-datastore
