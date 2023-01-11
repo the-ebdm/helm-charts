@@ -8,3 +8,7 @@ for chart in $(ls charts/); do
 done
 
 helm repo index --url https://ebdmuir.github.io/helm-charts/ .
+
+git add -A
+git commit -m "Update charts and index"
+git push
