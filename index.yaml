@@ -3,9 +3,9 @@ entries:
   cloud-city-database:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-01-11T18:19:59.418113Z"
+    created: "2023-01-11T18:49:18.450649Z"
     description: A Helm chart for Kubernetes
-    digest: 2c4e1609fde95364ad3caf9ec34cf965f74dce64c9ce4834a73236c516aa81a1
+    digest: 9ca036a242e3c2e65344ddf1ef68db9c47b9ca55da185be6bced08c102b75ce9
     name: cloud-city-database
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   keycloak-gatekeeper-sidecar:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-01-11T18:19:59.41834Z"
+    created: "2023-01-11T18:49:18.450926Z"
     description: A Helm chart for Kubernetes
-    digest: dbff87fec312b9f23b683ea9a7f9af4b40e5b8ab4ddc300cc00aa7272f41845b
+    digest: 1a2725b5b2fe9d93f0d4ec37a8e62d3cc1577ac09ba5ae46cec801bd7625daa6
     name: keycloak-gatekeeper-sidecar
     type: application
     urls:
@@ -25,7 +25,17 @@ entries:
   odne-strapi:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-01-11T18:19:59.420393Z"
+    created: "2023-01-11T18:49:18.454046Z"
+    description: A Helm chart for Kubernetes
+    digest: d9c7072da1de8e80159bd1d6d0ef20af18effcb666342d7b69608466aa80d319
+    name: odne-strapi
+    type: application
+    urls:
+    - https://ebdmuir.github.io/helm-charts/odne-strapi-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-01-11T18:49:18.453742Z"
     description: A Helm chart for Kubernetes
     digest: d8a2024bf0728e6a4c89256e0a18c2da1193ae72457128e69f2af444f5cb7f94
     name: odne-strapi
@@ -35,7 +45,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-01-11T18:19:59.420067Z"
+    created: "2023-01-11T18:49:18.453485Z"
     description: A Helm chart for Kubernetes
     digest: c93720d7d275124a5daf738f30feb22a38f24cf2f5f965f0a5fd6eff80f59031
     name: odne-strapi
@@ -45,7 +55,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-01-11T18:19:59.419654Z"
+    created: "2023-01-11T18:49:18.452975Z"
     description: A Helm chart for Kubernetes
     digest: 9fead08795cc94033a8ad64f8ed415d362fc0bfbf7f81fd1936ba1ee6b0effaa
     name: odne-strapi
@@ -55,7 +65,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-01-11T18:19:59.419243Z"
+    created: "2023-01-11T18:49:18.452507Z"
     description: A Helm chart for Kubernetes
     digest: ff00fe476570006747704e49f227e90f119b0f134bbbbabebbcaa8420b4234a8
     name: odne-strapi
@@ -65,7 +75,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-01-11T18:19:59.418816Z"
+    created: "2023-01-11T18:49:18.451411Z"
     description: A Helm chart for Kubernetes
     digest: 24a5777b22a025639da4008ee501ef47c7b101e974a53cf30f43c3491d1f9873
     name: odne-strapi
@@ -76,9 +86,9 @@ entries:
   redis-ha:
   - apiVersion: v1
     appVersion: 5.0.3
-    created: "2023-01-11T18:19:59.42097Z"
+    created: "2023-01-11T18:49:18.455211Z"
     description: Highly available Kubernetes implementation of Redis
-    digest: 58ea19039541b1a53bb370b446bb3494bd0bf00cac268e9258c4dc0988e17556
+    digest: 6f343b625ec743eac1d0e03dc7eec219d1401d3102b0af8f2881c36ae058818b
     home: http://redis.io/
     icon: https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1200px-Redis_Logo.svg.png
     keywords:
@@ -96,4 +106,4 @@ entries:
     urls:
     - https://ebdmuir.github.io/helm-charts/redis-ha-0.0.1.tgz
     version: 0.0.1
-generated: "2023-01-11T18:19:59.417705Z"
+generated: "2023-01-11T18:49:18.449555Z"
