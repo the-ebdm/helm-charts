@@ -3,9 +3,9 @@ entries:
   cloud-city-database:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-01-14T13:06:47.760997Z"
+    created: "2023-01-14T13:08:10.769073Z"
     description: A Helm chart for Kubernetes
-    digest: 818bcd4617e3d76effe0e7de42ebb828147cd4ae0a52aaf18a9c07ba15169273
+    digest: fcc01e2e3615045294128067ad1e133e2adb9b0367f14ab00e49077515cedb23
     name: cloud-city-database
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   keycloak-gatekeeper-sidecar:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-01-14T13:06:47.761242Z"
+    created: "2023-01-14T13:08:10.769373Z"
     description: A Helm chart for Kubernetes
-    digest: 92b13d7d3a5aee0cda2f4afa999d7c3969c9351df51eea4b0564e2f78fea7a77
+    digest: 1747b2d6cc73ba2ec90af28a4d4a8907974b750977ea5fd11b42cc62d5fa97b5
     name: keycloak-gatekeeper-sidecar
     type: application
     urls:
@@ -25,9 +25,9 @@ entries:
   odne-strapi:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-01-14T13:06:47.762277Z"
+    created: "2023-01-14T13:08:10.771772Z"
     description: A Helm chart for Kubernetes
-    digest: 2e712d068c18f5a65acf49bef791a1d5427f3220d81312de2a617d93736d6261
+    digest: 6eb05dbbf94bbd6d097a757771d63b3c475461a66885d643b9760404a6f07250
     name: odne-strapi
     type: application
     urls:
@@ -35,7 +35,7 @@ entries:
     version: 0.8.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-01-14T13:06:47.76195Z"
+    created: "2023-01-14T13:08:10.7714Z"
     description: A Helm chart for Kubernetes
     digest: 56ee1a78fba0daa9f65b32f796aec40ac5fdb50dda996e4b735ee52bfff06350
     name: odne-strapi
@@ -46,9 +46,9 @@ entries:
   redis-ha:
   - apiVersion: v1
     appVersion: 5.0.3
-    created: "2023-01-14T13:06:47.762818Z"
+    created: "2023-01-14T13:08:10.772335Z"
     description: Highly available Kubernetes implementation of Redis
-    digest: 35beb8509349e22d8f8ac110edec1e50b4714f8082da7c8a3c118a47d38bea00
+    digest: 8d485478a57c1b7a227152f0f8a0a7f7935967ac9aa008ccbc910a76bc678e40
     home: http://redis.io/
     icon: https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1200px-Redis_Logo.svg.png
     keywords:
@@ -66,4 +66,4 @@ entries:
     urls:
     - https://ebdmuir.github.io/helm-charts/redis-ha-0.0.1.tgz
     version: 0.0.1
-generated: "2023-01-14T13:06:47.760273Z"
+generated: "2023-01-14T13:08:10.768411Z"

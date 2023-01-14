@@ -18,8 +18,14 @@ LAST_GEN=$(curl -s https://ebdmuir.github.io/helm-charts/index.yaml | yq -r '.ge
 
 echo $LAST_GEN
 
-while [ "$CURRENT_GEN" != "$LAST_GEN" ]; do
-  echo "Waiting for index to update"
-  sleep 5
-  LAST_GEN=$(curl -s https://ebdmuir.github.io/helm-charts/index.yaml | yq -r '.generated')
-done
+if [ $CI ]; then
+  echo "Running in CI"
+  git config --global user.email "ci@ebdm.dev"
+  git config --global user.name "CI"
+else
+  while [ "$CURRENT_GEN" != "$LAST_GEN" ]; do
+    echo "Waiting for index to update"
+    sleep 5
+    LAST_GEN=$(curl -s https://ebdmuir.github.io/helm-charts/index.yaml | yq -r '.generated')
+  done
+fi
