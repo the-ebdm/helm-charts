@@ -5,7 +5,8 @@ metadata:
   name: {{ .Release.Name }}-datastore
 spec:
   volumeName: {{ .Release.Name }}-datastore
-  capacity:
-    storage: 5Gi
+  resources:
+    requests:
+      storage: 5Gi
   accessModes:
     - ReadWriteMany
