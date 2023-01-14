@@ -4,7 +4,6 @@ kind: PersistentVolumeClaim
 metadata:
   name: {{ .Release.Name }}-datastore
 spec:
-  volumeName: {{ .Release.Name }}-datastore
   resources:
     requests:
       storage: 5Gi
