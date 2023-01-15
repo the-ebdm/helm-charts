@@ -1,31 +1,14 @@
 #!/bin/bash
 
-# This script packages up the helm charts and updates the index
+# Download from s3
+aws s3 cp s3://ebdm-helm-charts . --recursive
 
+# Package charts
 for chart in $(ls charts/); do
   helm package charts/$chart
-  # echo $chart
 done
 
+# Upload charts to s3
+aws s3 cp . s3://ebdm-helm-charts --recursive --exclude "*" --include "*.tgz"
+
 helm repo index --url https://ebdmuir.github.io/helm-charts/ .
-
-git add -A
-git commit -m "Update charts and index"
-git push
-
-CURRENT_GEN=$(cat index.yaml | yq -r '.generated')
-LAST_GEN=$(curl -s https://ebdmuir.github.io/helm-charts/index.yaml | yq -r '.generated')
-
-echo $LAST_GEN
-
-if [ $CI ]; then
-  echo "Running in CI"
-  git config --global user.email "ci@ebdm.dev"
-  git config --global user.name "CI"
-else
-  while [ "$CURRENT_GEN" != "$LAST_GEN" ]; do
-    echo "Waiting for index to update"
-    sleep 5
-    LAST_GEN=$(curl -s https://ebdmuir.github.io/helm-charts/index.yaml | yq -r '.generated')
-  done
-fi
