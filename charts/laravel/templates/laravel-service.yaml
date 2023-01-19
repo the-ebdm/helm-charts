@@ -6,14 +6,14 @@ metadata:
     kompose.version: 1.26.1 (HEAD)
   creationTimestamp: null
   labels:
-    io.kompose.service: laravel-test
-  name: laravel.test
+    io.kompose.service: {{ .Release.Name }}-laravel-api
+  name: laravel
 spec:
   ports:
     - name: "80"
       port: 80
       targetPort: 80
   selector:
-    io.kompose.service: laravel-test
+    io.kompose.service: {{ .Release.Name }}-laravel-api
 status:
   loadBalancer: {}

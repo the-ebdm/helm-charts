@@ -1,0 +1,8 @@
+
+image:
+  name: ghcr.io/monogramm/docker-laravel
+  tag: 8.1
+  pullPolicy: Always
+  pullSecrets: []
+
+replicaCount: 1

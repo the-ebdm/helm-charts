@@ -6,13 +6,13 @@ metadata:
     kompose.version: 1.26.1 (HEAD)
   creationTimestamp: null
   labels:
-    io.kompose.service: laravel-yarn
-  name: laravel-yarn
+    io.kompose.service: laravel-test
+  name: laravel-test
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      io.kompose.service: laravel-yarn
+      io.kompose.service: laravel-test
   strategy:
     type: Recreate
   template:
@@ -23,14 +23,10 @@ spec:
       creationTimestamp: null
       labels:
         io.kompose.network/sail: "true"
-        io.kompose.service: laravel-yarn
+        io.kompose.service: {{ .Release.Name }}-laravel-api
     spec:
       containers:
-        - args:
-            - yarn
-            - run
-            - dev
-          env:
+        - env:
             - name: LARAVEL_SAIL
               value: "1"
             - name: WWWUSER
@@ -38,17 +34,10 @@ spec:
               value: client_host=host.docker.internal
             - name: XDEBUG_MODE
               value: "off"
-          image: sail-8.1/app
-          name: laravel.yarn
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          name: laravel-api
           ports:
-            - containerPort: 5173
+            - containerPort: 80
           resources: {}
-          volumeMounts:
-            - mountPath: /var/www/html
-              name: laravel-yarn-claim0
       restartPolicy: Always
-      volumes:
-        - name: laravel-yarn-claim0
-          persistentVolumeClaim:
-            claimName: laravel-yarn-claim0
 status: {}
