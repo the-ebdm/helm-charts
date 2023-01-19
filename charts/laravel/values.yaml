@@ -6,3 +6,6 @@ image:
   pullSecrets: []
 
 replicaCount: 1
+
+mailhog:
+  enabled: false
